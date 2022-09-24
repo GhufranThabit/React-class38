@@ -1,17 +1,16 @@
 import React from "react";
-import categories from "../fake-data/all-categories";
 
-const Categories = ({ handelCategorySelect }) => {
+const Categories = ({ categories, activeBtn, handelCategorySelect }) => {
   return (
     <div className="btn_area">
       {categories.map((category) => {
         return (
           <button
-            className="btn"
             key={category}
+            className={activeBtn === category ? "activeBtn" : "btn"}
             onClick={() => handelCategorySelect(category)}
           >
-            {category}
+            {category.replace("FAKE: ", "")}
           </button>
         );
       })}

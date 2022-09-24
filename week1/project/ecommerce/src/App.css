@@ -11,7 +11,6 @@
   height: 200px;
   width: 180px;
   object-fit: fill;
-  cursor: pointer;
 }
 .main {
   display: flex;
@@ -22,6 +21,12 @@
 .btn_area {
   margin: 10px;
 }
+.activeBtn {
+  height: 30px;
+  margin: 6px;
+  background-color: rgb(67, 67, 96);
+}
+
 .btn {
   height: 30px;
   margin: 6px;

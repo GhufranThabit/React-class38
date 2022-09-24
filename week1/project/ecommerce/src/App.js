@@ -3,6 +3,7 @@ import "./App.css";
 import Categories from "./component/Categories";
 import ProductsList from "./component/ProductsList";
 import products from "./fake-data/all-products";
+import categories from "./fake-data/all-categories";
 
 function App() {
   const [selectedProducts, setSelectedProducts] = useState(products);
@@ -14,6 +15,7 @@ function App() {
     );
 
     setSelectedCategory(catItem);
+
     setSelectedProducts(result);
   };
 
@@ -22,7 +24,8 @@ function App() {
       <h1>Products</h1>
       <div className="main">
         <Categories
-          selectedCategory={selectedCategory}
+          categories={categories}
+          activeBtn={selectedCategory}
           handelCategorySelect={handelCategorySelect}
         />
         <ProductsList products={selectedProducts} />
