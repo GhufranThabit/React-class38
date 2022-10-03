@@ -6,7 +6,6 @@ import ProductsList from "./component/ProductsList";
 function Home() {
   const [products, setProducts] = useState([]);
   const [categories, setCategories] = useState([]);
-  // const [category, setCategory] = useState("");
   const [isLoading, setIsLoading] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [error, setError] = useState("");
