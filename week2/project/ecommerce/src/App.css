@@ -57,3 +57,8 @@
   align-items: center;
   text-align: center;
 }
+
+.error {
+  margin-top: 50%;
+  color: red;
+}
