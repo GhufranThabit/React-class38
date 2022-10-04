@@ -1,0 +1,80 @@
+.App {
+  color: black;
+  background-color: white;
+}
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+  margin-right: 50px;
+}
+.img {
+  height: 200px;
+  width: 180px;
+  object-fit: fill;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn_area {
+  margin: 10px;
+}
+.activeBtn {
+  height: 30px;
+  margin: 6px;
+  background-color: rgb(67, 67, 96);
+}
+
+.btn {
+  height: 30px;
+  margin: 6px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+h1 {
+  text-align: center;
+}
+.list_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Products-items {
+  list-style: none;
+  width: 250px;
+  height: 320px;
+  margin: 19px 15px;
+}
+
+.details {
+  width: 100%;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.error {
+  margin-top: 50%;
+  color: red;
+}
+
+.heart-icon {
+  width: 15px;
+  cursor: pointer;
+}
+
+.fav-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
